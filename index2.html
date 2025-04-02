@@ -61,3 +61,29 @@
     </div>
 </body>
 </html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosūtīt jautājumu</title>
+</head>
+<body>
+
+    <h2>Ievadiet savu jautājumu:</h2>
+    <input type="text" id="jautajums" placeholder="Ievadiet jautājumu...">
+    <button onclick="nosutit()">Nosūtīt jautājumu</button>
+
+    <script>
+        function nosutit() {
+            var jautajums = document.getElementById("jautajums").value;
+            if (jautajums) {
+                alert("Jūsu jautājums ir nosūtīts: " + jautajums);
+            } else {
+                alert("Lūdzu, ievadiet jautājumu.");
+            }
+        }
+    </script>
+
+</body>
+</html>
+
